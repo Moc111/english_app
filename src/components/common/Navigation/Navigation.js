@@ -2,24 +2,26 @@ import React from 'react';
 import '../Navigation/Navigation.scss'
 
 const Navigation = () => {
+
   return (
     <nav>
-        <div>
-            <img className='header__logo' src='' alt='logo'/>
-        </div>
+      <img src='./image/Logo.jpg' alt='Logo' />
 
-        <div>
-          <ul className='header__list'>
-             <li><i class="fa-solid fa-user"></i></li>
-             <li><i class="fa-solid fa-dumbbell"></i></li>
-             <li><i class="fa-solid fa-book"></i></li>
-          </ul>
-        </div>
+      <div>
+        <ul className='header__list'>
+          <li><i className="fa-solid fa-book"></i></li>
+          <li><i className="fa-solid fa-dumbbell"></i></li>
+          <li><i className="fa-solid fa-store"></i></li>
+          <li><i className="fa-solid fa-newspaper"></i></li>
+          <li><i className="fa-solid fa-bars"></i></li>
+        </ul>
+      </div>
 
-        <div className='header__user'>
-            <i>User</i>
-        </div>
-        
+      <div className='header__user'>
+        <a href="/">
+          <i className="fa-solid fa-user"></i>
+        </a>
+      </div>
     </nav>
   );
 };

@@ -1,11 +1,12 @@
 import React from 'react';
 import Navigation from '../components/common/Navigation/Navigation'
+import Content from '../components/common/FirstPage/Content'
 const HomePage = () => {
   return (
     <div>
         <Navigation/>
       {/* Nội dung của trang chủ */}
-      <h2> Trang home </h2>
+        <Content/>
     </div>
   );
 };
